@@ -8,7 +8,7 @@ pipeline{
 	}
 		stage ('compiling stage'){
 			steps{
-				bat "mvn compile"
+				bat "mvn test"
 			}
 	}
 		stage ('installing stage'){
