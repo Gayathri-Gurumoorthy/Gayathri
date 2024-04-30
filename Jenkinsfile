@@ -6,14 +6,14 @@ pipeline{
 				bat "mvn clean"
 			}
 	}
-		stage ('testing stage'){
+		stage ('compiling stage'){
 			steps{
-				bat "mvn test"
+				bat "mvn compile"
 			}
 	}
-		stage ('packing stage'){
+		stage ('installing stage'){
 			steps{
-				bat "mvn package"
+				bat "mvn install"
 			}
 	}
 }
